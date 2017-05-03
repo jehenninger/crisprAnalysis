@@ -1,11 +1,26 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
+
+
+## NOTEs
+## Maybe don't output excel files, output csv so that we don't have to use rJava
+## Align to actual zebrafish genome instead of custom genome
+## May have to find R versions of bowtie2 and samtools
+library(devtools)
+
+library(ggplot2)
+library(CrispRVariants)
+library(Rsamtools)
+library(ShortRead)
+library(rtracklayer)
+library(zlibbioc)
+library(seqTools)
+library(Biostrings)
+library(BSgenome)
+library(GenomicFeatures)
+library(gdata)
+library(dplyr)
+library(fishplot)
+library(flowCore)
+library(Rtsne)
 
 library(shiny)
 

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n\n## NOTEs\n## Maybe don't output excel files, output csv so that we don't have to use rJava\n## Align to actual zebrafish genome instead of custom genome\n## May have to find R versions of bowtie2 and samtools\nlibrary(devtools)\n\nlibrary(ggplot2)\nlibrary(CrispRVariants)\nlibrary(Rsamtools)\nlibrary(ShortRead)\nlibrary(rtracklayer)\nlibrary(zlibbioc)\nlibrary(seqTools)\nlibrary(Biostrings)\nlibrary(BSgenome)\nlibrary(GenomicFeatures)\nlibrary(gdata)\nlibrary(dplyr)\nlibrary(fishplot)\nlibrary(flowCore)\nlibrary(Rtsne)\n\nlibrary(shiny)\n\n# Define UI for application that draws a histogram\nshinyUI(fluidPage(\n  \n  # Application title\n  titlePanel(\"Old Faithful Geyser Data\"),\n  \n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n       sliderInput(\"bins\",\n                   \"Number of bins:\",\n                   min = 1,\n                   max = 50,\n                   value = 30)\n    ),\n    \n    # Show a plot of the generated distribution\n    mainPanel(\n       plotOutput(\"distPlot\")\n    )\n  )\n))\n",
+    "created" : 1493823695734.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4168289443",
+    "id" : "2CE1F142",
+    "lastKnownWriteTime" : 1493827700,
+    "last_content_update" : 1493827700476,
+    "path" : "~/GitHub/crisprAnalysis/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
